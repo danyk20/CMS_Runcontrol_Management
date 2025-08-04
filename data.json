@@ -1,0 +1,132 @@
+{
+    "/lumipro/dip/global/LumiLevelling": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/dip/global/LumiLevelling,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 24600,
+        "version": 67
+    },
+    "/lumipro/central/global/LuminosityMonitor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/central/global/LuminosityMonitor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 17626,
+        "version": 16
+    },
+    "/lumipro/dip/global/commondataexchange": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/dip/global/commondataexchange,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 27740,
+        "version": 43
+    },
+    "/lumipro/bcm1f/global/bcm1fprocessor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/bcm1f/global/bcm1fprocessor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 30120,
+        "version": 365
+    },
+    "/lumipro/central/global/timesource_tcdsclock": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/central/global/timesource_tcdsclock,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 26760,
+        "version": 12
+    },
+    "/lumipro/dip/global/BRILAlarms": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/dip/global/BRILAlarms,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 29160,
+        "version": 11
+    },
+    "/lumipro/central/global/bestLumiProcessor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/central/global/bestLumiProcessor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 29900,
+        "version": 438
+    },
+    "/lumipro/central/global/vdmstore": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/central/global/vdmstore,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 27083,
+        "version": 32
+    },
+    "/lumipro/central/global/lumistore": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/central/global/lumistore,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 26740,
+        "version": 47
+    },
+    "/lumipro/bcm1f/global/bcm1fsource": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/bcm1f/global/bcm1fsource,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 28545,
+        "version": 35
+    },
+    "/lumipro/hf/global/hfocprocessor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/hf/global/hfocprocessor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 29842,
+        "version": 208
+    },
+    "/lumipro/hf/global/hfetprocessor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/hf/global/hfetprocessor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 29940,
+        "version": 193
+    },
+    "/lumipro/hf/global/hfsource": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/hf/global/hfsource,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 22500,
+        "version": 110
+    },
+    "/lumipro/bcml/global/bcml": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/bcml/global/bcml,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 26803,
+        "version": 9
+    },
+    "/lumipro/dip/global/dipprocessor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/dip/global/dipprocessor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 29620,
+        "version": 83
+    },
+    "/lumipro/plt/global/pltsource": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/plt/global/pltsource,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 14718,
+        "version": 6
+    },
+    "/lumipro/central/global/VDMScan": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/central/global/VDMScan,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 27066,
+        "version": 14
+    },
+    "/lumipro/plt/global/pltslinkprocessor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/plt/global/pltslinkprocessor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 26480,
+        "version": 26
+    },
+    "/lumipro/dt/global/dtprocessor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/dt/global/dtprocessor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 29643,
+        "version": 31
+    },
+    "/lumipro/bcm1futca/global/bcm1futcaprocessor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/bcm1futca/global/bcm1futcaprocessor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 30021,
+        "version": 224
+    },
+    "/lumipro/central/global/newVDMMonitor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/central/global/newVDMMonitor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 19599,
+        "version": 5
+    },
+    "/lumipro/bptx/global/bptxScopeProcessor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/bptx/global/bptxScopeProcessor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 26763,
+        "version": 14
+    },
+    "/lumipro/dip/global/lumidippublisher": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/dip/global/lumidippublisher,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 28540,
+        "version": 12
+    },
+    "/lumipro/bcm1futca/global/bcm1futcasource": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/bcm1futca/global/bcm1futcasource,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 29780,
+        "version": 188
+    },
+    "/lumipro/remus/global/remusprocessor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/remus/global/remusprocessor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 29644,
+        "version": 20
+    },
+    "/lumipro/plt/global/pltprocessor": {
+        "URI": "http://cmsrc-lumi.cms:26000/urn:rcms-fm:fullpath=/lumipro/plt/global/pltprocessor,group=BrilDAQFunctionManager,owner=lumipro",
+        "resGID": 30100,
+        "version": 230
+    }
+}
