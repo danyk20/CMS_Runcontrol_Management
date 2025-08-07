@@ -160,13 +160,11 @@ def get_apps(state: str = 'ON') -> dict[str: dict[str: str]]:
     Sends a POST request to a specified URL with JSON data loaded from a file,
     using a SOCKS5 proxy with remote DNS resolution.
     """
-    print("--- Python JSON POST Request Script with Proxy ---")
-    get_runcontrol_apps()
-    url = URL + 'states'
-
     json_data: dict[str: dict[str: str]] = get_runcontrol_apps()
     json.dumps(json_data, indent=2)
 
+    print("--- Python JSON POST Request Script ---")
+    url = URL + 'states'
     print(f"\nSending POST request to: {url} via proxy: {PROXIES}")
     response = call_url(url, 'POST', data=json_data)
     print(f"Response Body:\n{response.text}")
