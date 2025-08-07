@@ -2,6 +2,7 @@ import argparse
 import getpass
 import platform
 import socket
+import sys
 import time
 
 import pexpect
@@ -13,6 +14,7 @@ URL = 'http://srv-s2d16-22-01.cms/runcontrol/api/'
 OUTPUT = '_apps.json'  # output file name for Runcontrol applications
 INPUT = ''  # string input file for Runcontrol applications
 FILE = ''  # input file name for Runcontrol applications
+RUNCONTROL_INFO = False
 LUMI = 'lumipro'
 SERVICES = []
 PORT = 10880
@@ -169,6 +171,11 @@ def get_apps(state: str = 'ON') -> dict[str: dict[str: str]]:
     response = call_url(url, 'POST', data=json_data)
     print(f"Response Body:\n{response.text}")
 
+    if RUNCONTROL_INFO:
+        state_apps = {key: value for key, value in response.json().items()}
+        with open('runcontrol' + OUTPUT, "w") as file:
+            json.dump(state_apps, file, indent=4)
+        sys.exit(0)
     state_apps = {key: value for key, value in response.json().items() if value == state}
     with open(state + OUTPUT, "w") as file:
         json.dump(state_apps, file, indent=4)
@@ -261,8 +268,14 @@ def parse_arguments() -> None:
         help='A path to the .txt file or string with services to restart'
     )
 
+    parser.add_argument(
+        '--show_apps',
+        action="store_true",
+        help='Saves state of all Runcontrol application into runcontrol_apps.json'
+    )
+
     args = parser.parse_args()
-    global INPUT, FILE, SERVICES
+    global INPUT, FILE, SERVICES, RUNCONTROL_INFO
     if args.apps:
         if os.path.exists(args.apps):
             FILE = args.apps
@@ -273,6 +286,7 @@ def parse_arguments() -> None:
             SERVICES = []
             for line in file:
                 SERVICES.append(line)
+    RUNCONTROL_INFO = args.show_apps
 
 
 if __name__ == "__main__":
