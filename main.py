@@ -220,15 +220,14 @@ def restart_central_service(services: list[str]) -> None:
     Sends a 'restart' command to a specified systemd service with sudo permissions.
     :return: None
     """
-
+    username = input("Please enter your CERN username: ")
+    password = getpass.getpass("Enter your @cmsusr password: ")
     for service in sort_services(services):
         host = get_host(service)
-        username = input("Please enter your CERN username: ")
-        command = 'ssh -J ' + username + '@cmsusr ' + host + ' "sudo systemctl restart ' + service + '"'
+
+        command = 'ssh -J ' + username + '@cmsusr ' + username + '@' + host + ' "sudo systemctl restart ' + service + '"'
         print(command + "\n")
         try:
-            password = getpass.getpass("Enter your @cmsusr password: ")
-
             child = pexpect.spawn(command)
 
             child.expect('.*Password:.*')
