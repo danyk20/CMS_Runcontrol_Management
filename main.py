@@ -16,7 +16,7 @@ INPUT = ''  # string input file for Runcontrol applications
 FILE = ''  # input file name for Runcontrol applications
 RUNCONTROL_INFO = False
 LUMI = 'lumipro'
-SERVICES = []
+SERVICES = ['bril.central@srv-s2d16-18-01.service', 'bril.central@srv-s2d16-27-01.service']
 PORT = 10880
 
 
